@@ -1,3 +1,4 @@
+// https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/
 function search(nums, target) {
     let count = 0
     const index = binarySearch(nums, target)
@@ -21,7 +22,7 @@ function binarySearch(arr, val) {
     let high = arr.length - 1
     while (low <= high) {
         const mid = Math.floor((low + high) / 2 )
-        if (val == arr[mid]) {
+        if (val === arr[mid]) {
             return mid
         }
         if (val > arr[mid]) {
